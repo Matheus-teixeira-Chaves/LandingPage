@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+}
+
+.darkMode {
+    color: #fff;
+    background: #101220;
+    transition: background .5s;
+}
+
+.darkMode.active {
+    color: #000;
+    background: #fff;
+}
+
+.btnDark {
+    width: 70px;
+    height: 40px;
+    border: 5px solid #000;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btnDark::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: left .5s;
+}
+
+.btnDark.active::before {
+    left: 25px;
+}
+
+nav {
+    display: flexbox;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.menuFixo {
+    position: fixed;
+    height: 10vh;
+    font-size: 2rem;  
+}
+
+nav > ul {
+    width: 80vw;
+    height: 40px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #101220;;
+}
+
+a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.buttoDarkMode {
+    width: 60px;
+    height: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin: 60px auto;
+    font-family: monospace;
+}
+
+h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscaCursor .7s infinite;
+}
+
+@keyframes piscaCursor {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+#inicio,#sobre_mim, #projetos, #habilidades {
+    margin-top: 10vh;
+}
+
+.circulo-conteiner > img {
+    height: 300px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 10% 5% 2% 15%;
+}
+
+p {
+    font-size: 1.6rem;
+    margin: 0% 20%;
+    line-height: 2em;
+}
+
+.logo esquerda {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#sobre_mim_grid {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    
+}
+
+#sobre_mim_grid > p {
+    margin: 10%;
+}
+
+.foto_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+#projetos {
+    width: 80vw;
+}
+
+#projetos_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projetos_items {
+    margin: 10%;
+    width: 300px;
+    height: 300px;
+}
+
+.img_projetos {
+    width: 200px;
+    height: 200px;
+}
+
+.img_habilidades {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 400px) {
+    #sobre_mim_grid {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #projetos_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .projetos_items {
+        width: 300px;
+        height: 300px;
+        margin-top: 10vh;
+    }
+
+    .menuFixo  {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+}
+
+/* #66207A */
