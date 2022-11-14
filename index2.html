@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/darkMode.css">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/sobreMim.css">
 
 </head>
 <body class="darkMode">
-    <header class="darkMode">
+    <header id = "head" class="darkModeLista">
         <!--<nav>
             <ul>
                 <li> <a href="#inicio"> Início </a> </li>
@@ -20,7 +23,7 @@
                 <li> <a href="#habilidades"> Habilidades </a> </li>
                 <li> <img src="imagens/button_dark_mode_modoClaro.jpg" alt="" class="buttoDarkMode"> </li>
             </ul>
-        </nav>-->
+        </nav>
 
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid menuFixo darkMode ">
@@ -48,11 +51,26 @@
                   <li>
                     <div class ="btnDark" onclick="darkMode(this)"></div>
                   </li>
-                </ul>
+                </ul> -->
                 <!--<form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>-->
+
+                <!--<a id="logo" href=""> Logo  </a> -->
+                <nav id="nav">
+                  <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"> Menu <span id="hamburguer"></span></button>  
+                  <ul id="menu" role="menu" class="darkModeLista">
+                      <li> <a href="#inicio"> Início </a> </li>
+                      <li> <a href="#sobre-mim"> Sobre mim </a> </li>
+                      <li> <a href="#projetos"> Projetos </a> </li>
+                      <li> <a href="#habilidades"> Habilidades </a> </li>
+                      <li>
+                        <div class ="btnDark" onclick="darkMode(this)"></div>
+                      </li>
+                  </ul>
+                </nav>
+
               </div>
             </div>
           </nav>
@@ -207,4 +225,5 @@
 <script src="/scripts/animacoesTexto.js"></script>
 <script src="/scripts/scrollMenu.js"></script>
 <script src="/scripts/btnDarkMode.js"></script>
+<script src="/scripts/menuResponsivo.js"></script>
 </html>

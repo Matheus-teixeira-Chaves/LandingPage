@@ -1,0 +1,45 @@
+#sobre_mim_grid {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    
+}
+
+#sobre_mim_grid > p {
+    margin: 10%;
+}
+
+.foto_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+@media (max-width: 600px) {
+    #sobre_mim {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sobre_mim div {
+        display: block;
+        width: 100%;
+    }
+
+    .desenho {
+        position: relative;
+        display: block;
+        width: 100vw;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+
+    #sobre_mim_grid > p {
+        margin: 10%;
+        display: block;
+        width: 80vw;
+        
+    }
+}

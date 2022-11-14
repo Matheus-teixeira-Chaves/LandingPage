@@ -2,55 +2,21 @@
     margin: 0;
 }
 
-.darkMode {
-    color: #fff;
-    background: #101220;
-    transition: background .5s;
-}
 
-.darkMode.active {
-    color: #000;
-    background: #fff;
-}
-
-.btnDark {
-    width: 70px;
-    height: 40px;
-    border: 5px solid #000;
-    border-radius: 60px;
-    position: relative;
-    cursor: pointer;
-}
-
-.btnDark::before {
-    content: '';
-    position: absolute;
-    width: 35px;
-    height: 30px;
-    background: #000;
-    border-radius: 50%;
-    top: 50%;
-    left: 2px;
-    transform: translateY(-50%);
-    transition: left .5s;
-}
-
-.btnDark.active::before {
-    left: 25px;
-}
-
+/*
 nav {
     display: flexbox;
     flex-direction: row;
     width: 100vw;
     margin-top: 5vh;
 }
-
+*/
 .menuFixo {
     position: fixed;
     height: 10vh;
     font-size: 2rem;  
 }
+
 
 nav > ul {
     width: 80vw;
@@ -69,10 +35,7 @@ a {
     text-decoration: none;
 }
 
-.buttoDarkMode {
-    width: 60px;
-    height: 40px;
-}
+
 
 h1 {
     text-align: center;
@@ -120,24 +83,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
-
-#sobre_mim_grid {
-    display: grid;
-    grid-template-columns: 200px 3fr;
-    
-}
-
-#sobre_mim_grid > p {
-    margin: 10%;
-}
-
-.foto_perfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-left: 20%;
-    margin-top: 20%;
 }
 
 #projetos {
