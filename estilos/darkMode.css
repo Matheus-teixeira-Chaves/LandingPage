@@ -11,36 +11,17 @@
     background: #fff;
 }
 
-/*.darkMode  nav {
-    color: #000;
-    background: #fff;
-}
-
-#menu {
-    color: #000;
-    background: #fff;
-}
-
-.darkModeLista {
-    color: #fff;
-    background: #101220;
-}
-
-
 /*  DARK MODE ATIVADO  */
 
 .darkMode.active {
-    color: #000;
-    background: #fff;
+    color: #333333;
+    background: #FBFBFB;
 }
 
 .lightModeLista {
-    color: #fff;
+    color: #FBFBFB;
     background: #101220;
     display: block;
-    /*height: 10vh;
-    margin-top: 0;*/
-    
 }
 
 .lightModeLista a {
@@ -52,19 +33,12 @@
     background: #101220;
     transition: background .5s;
 }
-/*
-.darkMode.active  ul, li {
-    color: #fff;
-    background: #101220;
-    transition: background .5s;
-}
-
 
 /* BOTÃO DARK MODE */
 
 .btnDark {
     width: 70px;
-    height: 40px;
+    height: 35px;
     border: 5px solid #000;
     border-radius: 60px;
     position: relative;
@@ -74,7 +48,7 @@
 .btnDark::before {
     content: '';
     position: absolute;
-    width: 35px;
+    width: 30px;
     height: 30px;
     background: #000;
     border-radius: 50%;
@@ -85,7 +59,12 @@
 }
 
 .btnDark.active::before {
-    left: 25px;
+    left: 35px;
+    background-color: #fff;
+}
+
+.btnDark.active {
+    border-color: #fff;
 }
 
 .buttoDarkMode {

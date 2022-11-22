@@ -1,24 +1,28 @@
-const menuItems = document.querySelectorAll('.menuFixo a[href^="#"]');
+document.addEventListener('DOMContentLoaded', () => {
 
-menuItems.forEach (item => {
-    item.addEventListener('click', scrollToIdOnClick)
-})
+    const menuItems = document.querySelectorAll('.menuFixo a[href^="#"]');
 
-function scrollToIdOnClick (event) {
-    event.preventDefault();
-    const to = getScrollTopByHref(event.target) - 80;
+    menuItems.forEach (item => {
+        item.addEventListener('click', scrollToIdOnClick)
+    })
 
-    scrollToPosition(to);
-}
+    function scrollToIdOnClick (event) {
+        event.preventDefault();
+        const to = getScrollTopByHref(event.target) - 80;
 
-function scrollToPosition (to) {
-    window.scroll({
-        top: to,
-        behavior: "smooth"
-    });
-}
+        scrollToPosition(to);
+    }
 
-function getScrollTopByHref (element) {
-    const id = element.getAttribute('href');
-    return document.querySelector(id).offsetTop;
-}
+    function scrollToPosition (to) {
+        window.scroll({
+            top: to,
+            behavior: "smooth"
+        });
+    }
+
+    function getScrollTopByHref (element) {
+        const id = element.getAttribute('href');
+        return document.querySelector(id).offsetTop;
+    }
+
+});

@@ -10,13 +10,20 @@ nav {
     width: 100vw;
     margin-top: 5vh;
 }
-*/
+
 .menuFixo {
     position: fixed;
     height: 10vh;
     font-size: 2rem;  
 }
-
+*/
+.menuFixo {
+    position: fixed;
+    margin-top: -65px;
+    margin-bottom: 20%;
+    z-index: 10000;
+    width: 100%;
+}
 
 nav > ul {
     width: 80vw;
@@ -71,6 +78,9 @@ h1::after {
 h2 {
     font-size: 2em;
     margin: 10% 5% 2% 15%;
+    padding-left: 15px;
+    background-image: linear-gradient(to right, #4499EF, #AF23EF);
+    width: 80vw;
 }
 
 p {
@@ -83,27 +93,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
-
-#projetos {
-    width: 80vw;
-}
-
-#projetos_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.projetos_items {
-    margin: 10%;
-    width: 300px;
-    height: 300px;
-}
-
-.img_projetos {
-    width: 200px;
-    height: 200px;
 }
 
 .img_habilidades {

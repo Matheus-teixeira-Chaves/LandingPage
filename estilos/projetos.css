@@ -1,0 +1,20 @@
+#projetos {
+    width: 80vw;
+}
+
+#projetos_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projetos_items {
+    margin: 10%;
+    width: 300px;
+    height: 300px;
+}
+
+.img_projetos {
+    width: 200px;
+    height: 200px;
+}

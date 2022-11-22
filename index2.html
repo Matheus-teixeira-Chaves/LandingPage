@@ -1,104 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Dev Full Stack </title>
 
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/darkMode.css">
     <link rel="stylesheet" href="estilos/menu.css">
     <link rel="stylesheet" href="estilos/sobreMim.css">
+    <link rel="stylesheet" href="estilos/projetos.css">
+    <link rel="stylesheet" href="estilos/carrossel.css">
 
 </head>
 <body class="darkMode">
-    <header id = "head" class="darkModeLista">
-        <!--<nav>
-            <ul>
+    <header id = "head" class="darkModeLista menuFixo">
+        <nav id="nav" class="">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"> Menu <span id="hamburguer"></span></button>  
+                  
+            <ul id="menu" role="menu" class="darkModeLista">
                 <li> <a href="#inicio"> Início </a> </li>
-                <li> <a href="#sobre-mim"> Sobre mim </a> </li>
+                <li> <a href="#sobre_mim"> Sobre mim </a> </li>
                 <li> <a href="#projetos"> Projetos </a> </li>
                 <li> <a href="#habilidades"> Habilidades </a> </li>
-                <li> <img src="imagens/button_dark_mode_modoClaro.jpg" alt="" class="buttoDarkMode"> </li>
+                <li>
+                    <div class ="btnDark" onclick="darkMode(this)"></div>
+                </li>
             </ul>
         </nav>
-
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid menuFixo darkMode ">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio"> Início </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#sobre_mim"> Sobre mim </a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projetos"> Projetos </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#habilidades"> Habilidades </a>
-                  </li>
-                  
-                  <li>
-                    <div class ="btnDark" onclick="darkMode(this)"></div>
-                  </li>
-                </ul> -->
-                <!--<form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>-->
-
-                <!--<a id="logo" href=""> Logo  </a> -->
-                <nav id="nav">
-                  <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"> Menu <span id="hamburguer"></span></button>  
-                  <ul id="menu" role="menu" class="darkModeLista">
-                      <li> <a href="#inicio"> Início </a> </li>
-                      <li> <a href="#sobre-mim"> Sobre mim </a> </li>
-                      <li> <a href="#projetos"> Projetos </a> </li>
-                      <li> <a href="#habilidades"> Habilidades </a> </li>
-                      <li>
-                        <div class ="btnDark" onclick="darkMode(this)"></div>
-                      </li>
-                  </ul>
-                </nav>
-
-              </div>
-            </div>
-          </nav>
-
     </header>
+    
     <main>
         <div id="inicio">
-            <!--<div class="apresentacao">
-                <p class="descricao">
-                    Oi, eu sou <br />
-                    <span style = "display: inline;"> Matheus Teixeira. </span>
-                    <br />
-                    Desenvolvedor Full Stack
-                </p>
-                <br />
-                
-                <div class="linkedin">
-                    <a href=""
-                        target="_blank"
-                        class="link"
-                    >
-                        Linkedin
-                    </a>
-                </div>
-            </div> -->
-
-            <h1> Oi, eu sou Matheus Teixeira Desenvolvedor Full Stack. </h1>
-                
+            <h1> Oi, eu sou Matheus Teixeira, Desenvolvedor Full Stack. </h1>          
         </div>
 
         <div id="sobre_mim">
@@ -108,7 +43,7 @@
                 <div id="sobre_mim_grid">
                 <div class="desenho">
                     <img 
-                        src="imagens/foto_perfil.jpg" 
+                        src="imagens/foto_perfil_200px.jpg" 
                         alt="Foto de Perfil"
                         class="foto_perfil"
                     >
@@ -134,7 +69,7 @@
             <div id="projetos_container">
                 <div class="projetos_items"> 
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="imagens/fruitsEats.png" alt="" class="img_projetos">
+                        <img src="imagens/fruitsEats_500px.png" alt="" class="img_projetos">
                     </a>
                     <h3> Projeto Jogo Fruits Eats </h3>
                     <details> Jogo desenvolvido usando apenas HTML 5, CSS 3 e JavaScript 3.</details>
@@ -149,7 +84,7 @@
                 </div>
                 <div class="projetos_items"> 
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="imagens/springBoot_mysql.png" alt="" class="img_projetos">
+                        <img src="imagens/springBoot_mysql_300px.png" alt="" class="img_projetos">
                     </a>
                     <h3> Spring Boot com MySQL </h3>
                     <details> Projeto de uma aplicação API Rest, usando o Spring Boot 2 com persistencia de dados no MySQL. </details>
@@ -163,7 +98,7 @@
                 </div>
                 <div class="projetos_items"> 
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="imagens/recode.png" alt="" class="img_projetos">
+                        <img src="imagens/recode_500px.png" alt="" class="img_projetos">
                     </a>
                     <h3> Projeto 360° Recode Pro </h3>
                     <details> Projeto desenvolvido dentro do curso de desenvolvedor web full stack, da instituição Recode Pro, feito em conjunto com meus colegas de squad. Usando React Js, BootStrap, C# e MySQL. </details>
@@ -178,52 +113,33 @@
         <div id="habilidades">
             <h2> Habilidades </h2>
             
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="imagens/JavaScript-logo.png" class="d-block w-100 img_habilidades" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="imagens/logo_bootStrap_preto.jpg" class="d-block w-100 img_habilidades" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+            <div class="container_habiliddes">
+
+                <button class="arrow-left control" aria-label="PreviousImage" > < </button>
+                <button class="arrow-right control" aria-label="NextImage" > > </button>
+
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <img src="imagens/logo_html5.webp" alt="" class="item_habilidades current-item">
+                        <img src="imagens/simbolo_css3_500px.png" alt="" class="item_habilidades">
+                        <img src="imagens/JavaScript-logo-500px.png" alt="" class="item_habilidades">
+                        <img src="imagens/logo_bootStrap_preto.jpg" alt="" class="item_habilidades">
+                        <img src="imagens/" alt="" class="item_habilidades">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-</div>
+            </div>
+            
         </div>
     </main>
+    
     <footer> redes socias copy@</footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 <script src="/scripts/animacoesTexto.js"></script>
 <script src="/scripts/scrollMenu.js"></script>
 <script src="/scripts/btnDarkMode.js"></script>
 <script src="/scripts/menuResponsivo.js"></script>
+<script src="/scripts/itemsProjetos.js"></script>
+<script src="/scripts/carrossel.js"></script>
+
 </html>
