@@ -7,9 +7,10 @@
 
 .gallery-wrapper {
     overflow-x: auto;
+    overflow-x: hidden;
 }
 
-.gallery{
+.gallery {
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
@@ -54,4 +55,28 @@
 .current-item {
     opacity: 1;
     border: 5px solid #AF23EF;
+}
+
+/*.descricao-habilidades-escondido {
+    opacity: 0;
+}
+
+.descricao-habilidades-amostra {
+    opacity: 1;
+}*/
+
+@media (max-width: 600px) {
+    .container_habiliddes {
+        max-width: 300px;
+    }
+    
+    .gallery {
+        gap: 45px;
+    }
+
+    .current-item {
+        opacity: 1;
+        border: 5px solid #AF23EF;
+        
+    }
 }
