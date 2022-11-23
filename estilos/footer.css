@@ -1,3 +1,63 @@
+#contato {
+    
+}
+
 h3 {
     margin: 20px 20%;
+}
+
+.cnt_redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    width: 80vw;
+    margin: 0% 5% 2% 15%;
+}
+
+.cnt_redes_sociais a {
+    margin: 30px 50px;
+    display: inline-block;
+    align-items: center;
+    color: #e7e7e7;
+
+    background-image: linear-gradient(transparent 0%, transparent 90%, #4499EF 90%, #AF23EF 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+
+    transition: background-size 300ms;
+}
+
+.cnt_redes_sociais a:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+
+@media (max-width: 600px) {
+    .cnt_redes_sociais {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cnt_redes_sociais a {
+        background-image: linear-gradient(transparent 0%, transparent 90%, #4499EF 90%, #AF23EF 100%);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+
+        transition: background-size 300ms;
+    }
+
+    .cnt_redes_sociais a:hover {
+        background-size: 100% 100%;
+        background-position-x: left;
+    }
+
+    .cnt_redes_sociais > img {
+        margin-left: 0;
+    }
 }
