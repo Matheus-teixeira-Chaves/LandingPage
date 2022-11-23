@@ -45,6 +45,18 @@ nav {
     margin-top: 0;
 }
 
+.ctn_btn {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.ctn_btn img {
+    margin: 5px 7px 0 7px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
 @media (max-width: 600px) {
     #btn-mobile {
         display: block;

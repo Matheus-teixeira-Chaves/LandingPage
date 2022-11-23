@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="estilos/sobreMim.css">
     <link rel="stylesheet" href="estilos/projetos.css">
     <link rel="stylesheet" href="estilos/carrossel.css">
+    <link rel="stylesheet" href="estilos/footer.css">
 
 </head>
 <body class="darkMode">
@@ -24,8 +25,11 @@
                 <li> <a href="#sobre_mim"> Sobre mim </a> </li>
                 <li> <a href="#projetos"> Projetos </a> </li>
                 <li> <a href="#habilidades"> Habilidades </a> </li>
-                <li>
+                <li> <a href="#contato"> Contato </a> </li>
+                <li class="ctn_btn">
+                    <img src="imagens/luaDarkMode.jpg" alt="">
                     <div class ="btnDark" onclick="darkMode(this)"></div>
+                    <img src="imagens/solLightMode.jpg" alt="">
                 </li>
             </ul>
         </nav>
@@ -233,7 +237,34 @@
         </div>
     </main>
     
-    <footer> redes socias copy@</footer>
+    <footer id="contato">
+        <h2> Entre em Contato </h2>
+            <h3> redes socias: </h3> 
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/Logo-LinkedIn-branca-50x50.png" alt="" id="logoLinkedIn" onmousemove="alterarImagemLinkedIn()" onmouseout="retornarImagemLinkedIn()">
+                LinkedIn
+            </a>
+
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/github_branco_50x50.png" alt="" id="logoGithub" onmousemove="alterarImagemGithub()" onmouseout="retornarImagemGithub()">
+                GitHub
+            </a>
+
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/email_branco_50x50.png" alt="">
+                Email
+            </a>
+
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/whatsapp_fundo_transpar_contorno_brancoente_50x50.png" alt="">
+                WhatsApp
+            </a>
+            
+            <div>
+                <p> Desenvolvido por Matheus Teixeira copy@</p>
+                <p> 2022 </p>
+            </div>
+    </footer>
 </body>
 
 <script src="/scripts/animacoesTexto.js"></script>
@@ -242,5 +273,6 @@
 <script src="/scripts/menuResponsivo.js"></script>
 <script src="/scripts/itemsProjetos.js"></script>
 <script src="/scripts/carrossel.js"></script>
+<script src="/scripts/contato.js"></script>
 
 </html>
