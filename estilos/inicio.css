@@ -1,0 +1,25 @@
+#inicio {
+    display: flex;
+    margin-top: 10vh;
+}
+
+.curriculo {
+    background-image: linear-gradient(transparent 0%, transparent 90%, #4499EF 90%, #AF23EF 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+
+    transition: background-size 300ms;
+}
+
+.curriculo:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+@media (max-width: 600px) {
+    #inicio {
+        display: flex;
+        flex-direction: column;
+    }
+}
