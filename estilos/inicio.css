@@ -22,4 +22,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    .caricatura {
+        height: 150px;
+        width: 150px;
+        margin: 2vh 30%;
+    }
 }
